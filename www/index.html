@@ -34,7 +34,8 @@
 		document.getElementById("salon_content").style.display="none"
 		document.getElementById("contact_content").style.display="none"
 		document.getElementById("evenements_content").style.display="none"
-		
+		document.getElementById("medical_content").style.display="none"
+		document.getElementById("food_content").style.display="none"		
 		document.getElementById("partenaires_content").style.display="none"
 		var e = document.getElementById(elemID);
 		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
@@ -47,7 +48,8 @@
 		document.getElementById("salon_content").style.display="none"
 		document.getElementById("contact_content").style.display="none"
 		document.getElementById("evenements_content").style.display="none"
-		
+		document.getElementById("medical_content").style.display="none"
+		document.getElementById("food_content").style.display="none"		
 		document.getElementById("partenaires_content").style.display="none"
 		var e = document.getElementById(elemID);
 		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
@@ -60,7 +62,8 @@
 		document.getElementById("presentation_content").style.display="none"
 		document.getElementById("contact_content").style.display="none"
 		document.getElementById("evenements_content").style.display="none"
-		
+		document.getElementById("medical_content").style.display="none"
+		document.getElementById("food_content").style.display="none"		
 		document.getElementById("partenaires_content").style.display="none"
 		var e = document.getElementById(elemID);
 		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
@@ -73,7 +76,8 @@
 		document.getElementById("salon_content").style.display="none"
 		document.getElementById("presentation_content").style.display="none"
 		document.getElementById("evenements_content").style.display="none"
-	
+		document.getElementById("medical_content").style.display="none"
+		document.getElementById("food_content").style.display="none"	
 		document.getElementById("partenaires_content").style.display="none"
 		var e = document.getElementById(elemID);
 		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
@@ -86,7 +90,8 @@
 		document.getElementById("salon_content").style.display="none"
 		document.getElementById("contact_content").style.display="none"
 		document.getElementById("presentation_content").style.display="none"
-	
+		document.getElementById("medical_content").style.display="none"
+		document.getElementById("food_content").style.display="none"	
 		document.getElementById("partenaires_content").style.display="none"
 		var e = document.getElementById(elemID);
 		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
@@ -99,13 +104,43 @@
 		document.getElementById("salon_content").style.display="none"
 		document.getElementById("contact_content").style.display="none"
 		document.getElementById("evenements_content").style.display="none"
-
+		document.getElementById("medical_content").style.display="none"
+		document.getElementById("food_content").style.display="none"
 		document.getElementById("presentation_content").style.display="none"
 		var e = document.getElementById(elemID);
 		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
 		e.style.display = dStyle;
 	}
 	</script>
+    
+    <script>function bShowHide_medical(elemID)
+	{
+		document.getElementById("maintenance_content").style.display="none"
+		document.getElementById("salon_content").style.display="none"
+		document.getElementById("contact_content").style.display="none"
+		document.getElementById("evenements_content").style.display="none"
+		document.getElementById("food_content").style.display="none"
+		document.getElementById("presentation_content").style.display="none"
+		var e = document.getElementById(elemID);
+		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
+		e.style.display = dStyle;
+	}
+	</script>
+    
+    <script>function bShowHide_food(elemID)
+	{
+		document.getElementById("maintenance_content").style.display="none"
+		document.getElementById("salon_content").style.display="none"
+		document.getElementById("contact_content").style.display="none"
+		document.getElementById("evenements_content").style.display="none"
+		document.getElementById("medical_content").style.display="none"
+		document.getElementById("presentation_content").style.display="none"
+		var e = document.getElementById(elemID);
+		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
+		e.style.display = dStyle;
+	}
+	</script>
+    
 	<script>function bShowHide(elemID)
 	{
 		var e = document.getElementById(elemID);
@@ -117,7 +152,7 @@
 	<body>
 <div id="home"> </div>
 <div id="page">
-      <div id="presentation_titre" class="titre"> <a href="#presentation_titre" style="text-decoration:none; color:white; " onClick="bShowHide_presentation('presentation_content');">
+      <div id="presentation_titre" class="titre"> <a href="#presentation_titre" style="text-decoration:none; color:white; display:block;width:100%;height:100%; " onClick="bShowHide_presentation('presentation_content');">
         <p>CAMP</p>
         </a> </div>
       <div id="ligne1" class="ligne"> </div>
@@ -151,7 +186,7 @@
 </table>
 <br>
 </div>
-      <div id="maintenance_titre" class="titre"> <a href="#maintenance_titre"  style="text-decoration:none; color:white; " onClick="bShowHide_maintenance('maintenance_content');">
+      <div id="maintenance_titre" class="titre"> <a href="#maintenance_titre"  style="text-decoration:none; color:white; display:block;width:100%;height:100%;" onClick="bShowHide_maintenance('maintenance_content');">
         <p>SURVIVAL</p>
         </a> </div>
       <div id="ligne1" class="ligne"> </div>
@@ -203,11 +238,96 @@
        </td>
    </tr>
    
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-06-28-008.png" style="height:120px;"></td>
+       <td>Camping Sack</td>
+       <td>2 chemichals <br>5 adhesive <br>10 cloth<br>1 part
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-06-29-109.png" style="height:120px;"></td>
+       <td>Garden Frame</td>
+       <td>10 metal<br>5 wood<br>1 adhesive
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-06-30-306.png" style="height:120px;"></td>
+       <td>Large Pouched Pack</td>
+       <td>13 cloth<br>6 adhesive<br>3 plastic
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-06-31-404.png" style="height:120px;"></td>
+       <td>Placeable Campfire</td>
+       <td>7 wood<br>3 chemicals<br>4 stone
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-06-32-561.png" style="height:120px;"></td>
+       <td>Spike Strip</td>
+       <td>3 metal
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-06-33-702.png" style="height:120px;"></td>
+       <td>Tomato Garden</td>
+       <td>1 chemical<br> 1 tomato seed<br> 1 garden frame
+       </td>
+   </tr>
+   
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-06-34-883.png" style="height:120px;"></td>
+       <td>Animal Trapn</td>
+       <td>10 wood <br>3 chemicals<br>3 adhesive<br>3 plastic<br>3 cloth
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-06-36-054.png" style="height:120px;"></td>
+       <td>Barricade: Barbed Wire</td>
+       <td>8 metal<br>4 adhesive<br>2 plastic<br>2 stone
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-06-37-262.png" style="height:120px;"></td>
+       <td>Broccoli Garden</td>
+       <td>1 chemical<br> 1 broccoli seed<br> 1 garden frame
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-06-38-350.png" style="height:120px;"></td>
+       <td>Carrot Garden</td>
+       <td>1 chemical<br> 1 carrot seed<br> 1 garden frame
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-06-39-545.png" style="height:120px;"></td>
+       <td>Lettuce Garden</td>
+       <td>1 chemical<br> 1 lettuce seed<br> 1 garden frame
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-06-40-782.png" style="height:120px;"></td>
+       <td>Patato Garden</td>
+       <td>1 chemical<br> 1 potato seed<br> 1 garden frame
+       </td>
+   </tr>
+   
 </table>
 <br>
   </div>
-      <div id="salon_titre" class="titre"> <a href="#salon_titre" style="text-decoration:none; color:white; " onClick="bShowHide_salon('salon_content');">
-        <p>PVP</p>
+      <div id="salon_titre" class="titre"> <a href="#salon_titre" style="text-decoration:none; color:white;display:block;width:100%;height:100%; " onClick="bShowHide_salon('salon_content');">
+        <p>CLOTHING</p>
         </a> </div>
       <div id="ligne1" class="ligne"> </div>
       <div id="salon_content" class="content">
@@ -218,35 +338,27 @@
        				<td>MATERIALS</td>
    				</tr>
    				<tr>
-       			<td><img src="images/icons/Aftermath 2015-04-02 13-06-14-080.png" style="height:120px;"></td>
-       			<td>Makeshift Shelter</td>
-                <td>5 tools <br/>
-                5 parts<br/>
-                25 metal<br/>
-                15 wood<br/>
-                5 adhesive<br/>
-                10 plastic
+       			<td><img src="images/icons/Aftermath 2015-04-02 13-06-44-557.png" style="height:120px;"></td>
+       			<td>Deathglow T-Shirt</td>
+                <td> 1 skull shirt<br>1 chemical<br>1 raw beet
                 </td>
  		  </tr>
-  		  <tr>
-          <td><img src="images/icons/Aftermath 2015-04-02 13-06-17-203.png" style="height:120px;"></td>
-       <td>Stash Box</td>
-       <td>
-       20 wood<br/>
-       10 adhesive<br/>
-       10 cloth<br/>3 tool<br/>2 part
-       </td>
+          <tr>
+       			<td><img src="images/icons/Aftermath 2015-04-02 13-06-44-557.png" style="height:120px;"></td>
+       			<td>Cowboy Hat</td>
+                <td> 3 plastic<br>1 part<br>5 chemical<br>2 tool<br>10 cloth
+                </td>
    </tr>
+   
+   
 </table>
 <br>
-    <p>text</p>
   </div>
-      <div id="contact_titre" class="titre"> <a href="#contact_titre" style="text-decoration:none; color:white; " onClick="bShowHide_contact('contact_content');">
-        <p>MAP</p>
+      <div id="contact_titre" class="titre"> <a href="#contact_titre" style="text-decoration:none; color:white;display:block;width:100%;height:100%; " onClick="bShowHide_contact('contact_content');">
+        <p>TOOLS</p>
         </a> </div>
       <div id="ligne1" class="ligne"> </div>
       <div id="contact_content" class="content">
-    <h1>MAP</h1>
     <table class="center" cellpadding="10"><br>
    				<tr>
        				<td>ICON</td>
@@ -254,34 +366,19 @@
        				<td>MATERIALS</td>
    				</tr>
    				<tr>
-       			<td><img src="images/icons/Aftermath 2015-04-02 13-06-14-080.png" style="height:120px;"></td>
-       			<td>Makeshift Shelter</td>
-                <td>5 tools <br/>
-                5 parts<br/>
-                25 metal<br/>
-                15 wood<br/>
-                5 adhesive<br/>
-                10 plastic
+       			<td><img src="images/icons/Aftermath 2015-04-02 13-06-49-718.png" style="height:120px;"></td>
+       			<td>Crude Harvesting Axe</td>
+                <td>3 tools<br>3 part<br>10 metal<br>4 chemical<br>3 adhesive
                 </td>
  		  </tr>
-  		  <tr>
-          <td><img src="images/icons/Aftermath 2015-04-02 13-06-17-203.png" style="height:120px;"></td>
-       <td>Stash Box</td>
-       <td>
-       20 wood<br/>
-       10 adhesive<br/>
-       10 cloth<br/>3 tool<br/>2 part
-       </td>
-   </tr>
 </table>
 <br>
   </div>
-      <div id="evenements_titre" class="titre"> <a href="#evenements_titre" style="text-decoration:none; color:white; " onClick="bShowHide_evenements('evenements_content');">
-        <p>ZOMBIES</p>
+      <div id="evenements_titre" class="titre"> <a href="#evenements_titre" style="text-decoration:none; color:white;display:block;width:100%;height:100%; " onClick="bShowHide_evenements('evenements_content');">
+        <p>WEAPONS</p>
         </a> </div>
       <div id="ligne1" class="ligne"> </div>
       <div id="evenements_content" class="content">
-    <h1>ZOMBIES</h1>
     <table class="center" cellpadding="10"><br>
    				<tr>
        				<td>ICON</td>
@@ -289,59 +386,229 @@
        				<td>MATERIALS</td>
    				</tr>
    				<tr>
-       			<td><img src="images/icons/Aftermath 2015-04-02 13-06-14-080.png" style="height:120px;"></td>
-       			<td>Makeshift Shelter</td>
-                <td>5 tools <br/>
-                5 parts<br/>
-                25 metal<br/>
-                15 wood<br/>
-                5 adhesive<br/>
-                10 plastic
+       			<td><img src="images/icons/Aftermath 2015-04-02 13-06-52-543.png" style="height:120px;"></td>
+       			<td>5.56 Manslayer</td>
+                <td>20 metal<br>8 adhesive<br>8 wood<br>7 cloth<br>8 plastic<br>8 chemical
                 </td>
  		  </tr>
   		  <tr>
-          <td><img src="images/icons/Aftermath 2015-04-02 13-06-17-203.png" style="height:120px;"></td>
-       <td>Stash Box</td>
-       <td>
-       20 wood<br/>
-       10 adhesive<br/>
-       10 cloth<br/>3 tool<br/>2 part
+          <td><img src="images/icons/Aftermath 2015-04-02 13-06-55-152.png" style="height:120px;"></td>
+       <td>bear Trap</td>
+       <td>25 metal<br>5 adhesive<br>3 chemicals<br>4 part<br>4 tools<br>3 glass<br>4 plastic
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-06-56-146.png" style="height:120px;"></td>
+       <td>Frag Bomb</td>
+       <td>15 metal<br>5 chemicals<br>6 adhesive<br>5 plastic<br>7 glass<br>2 tool<br>2 part
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-06-57-064.png" style="height:120px;"></td>
+       <td>land Mine</td>
+       <td>20 metal<br>6 chemicals<br>6 adhesive<br>6 plastic<br>3 tool<br>3 part<br>10 glass
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-06-57-970.png" style="height:120px;"></td>
+       <td>LR Eviscerator</td>
+       <td>25 metal<br>25 wood<br>15 glass<br>10 plastic<br>4 tool<br>4 part
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-06-58-858.png" style="height:120px;"></td>
+       <td>Prison Shank</td>
+       <td>1 tool<br>3 plastic<br>4 adhesive<br>4 cloth<br>6 metal
+       </td>
+   </tr>
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-06-59-822.png" style="height:120px;"></td>
+       <td>Spike Trap</td>
+       <td>25 metal<br>4 adhesive<br>4 chemicals<br>4 part<br>4 tool<br>4 stone
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-07-00-840.png" style="height:120px;"></td>
+       <td>Spiked beat Stick</td>
+       <td>1 rusted beat stick<br>3 tool<br>3 part<br>7 adhesive<br>13 metal<br>7 glass<br>5 plastic
+       </td>
+   </tr>
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-07-01-898.png" style="height:120px;"></td>
+       <td>.45 Thunder</td>
+       <td>15 metal<br>3tools<br>5 plastic<br>4 cloth<br>5 adhesive<br>6 glass
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-07-03-177.png" style="height:120px;"></td>
+       <td>439-CR Sweeper</td>
+       <td>20 metal<br>4 tool<br>4 parts<br>6 chemicals<br>6 adhesive<br>5 plastic<br>8 glass
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-07-04-986.png" style="height:120px;"></td>
+       <td>5.56 marksman</td>
+       <td>25 metal<br>8 adhesive<br>6 chemicals<br>8 cloth<br>15 glass<br>10 wood<br>
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-07-06-441.png" style="height:120px;"></td>
+       <td>Aces Wild 9mm</td>
+       <td>15 metal<br>5 chemicals<br>5 adhesive<br>3 tools<br>4 glass<br>3 parts
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-07-09-001.png" style="height:120px;"></td>
+       <td>Crafted Silencer-SM</td>
+       <td>15 metal<br>1 metal pipe <br>7 metal pipe<br>7 adhesive<br>5 tool<br>5 parts
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-07-14-649.png" style="height:120px;"></td>
+       <td>Crafted Silencer-XL</td>
+       <td>15 metal<br>15 adhesive<br>1 empty bottle: .37 litre<br>5 tools<br>5 parts
+       </td>
+   </tr>
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-07-16-442.png" style="height:120px;"></td>
+       <td>FLAME-ON Torch</td>
+       <td>2 chemicals<br>3 wood<br>2 cloth
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-07-17-721.png" style="height:120px;"></td>
+       <td>Spiked Baseball Bat</td>
+       <td>4 tools<br>3 parts<br>7 adhesive<br>14 metal<br>9 cloth<br>1 wooden bat
+       </td>
+   </tr>
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-07-09-001.png" style="height:120px;"></td>
+       <td>Crafted Silencer-SM</td>
+       <td>15 metal<br>1 metal pipe <br>7 metal pipe<br>7 adhesive<br>5 tool<br>5 parts
+       </td>
+   </tr>
+   
+</table>
+<br>
+  </div>
+      <div id="partenaires_titre" class="titre"> <a href="#partenaires_titre" style="text-decoration:none; color:white;display:block;width:100%;height:100%; " onClick="bShowHide_partenaires('partenaires_content');">
+        <p>ARMOR & AMMO</p>
+        </a> </div>
+        <div id="ligne1" class="ligne"> </div>
+      <div id="partenaires_content" class="content">
+    <table class="center" cellpadding="10"><br>
+   				<tr>
+       				<td>ICON</td>
+       				<td>NAME</td>
+       				<td>MATERIALS</td>
+   				</tr>
+   	<tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-07-23-618.png" style="height:120px;"></td>
+       <td>Armor: Steel Craft</td>
+       <td>12 metal<br>5 cloth<br>3 parts<br>3 tool<br>8 adhesive<br>8 chemicals<br>7 glass
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-07-25-931.png" style="height:120px;"></td>
+       <td>Armor: Titanium Craft</td>
+       <td>25 metal<br>7 tool<br>7 part<br>10 chemicals<br>15 adhesive<br>15 plastic<br>10 cloth<br>10 glass
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-07-27-592.png" style="height:120px;"></td>
+       <td>Crafted 5.56mm Bullets</td>
+       <td>25 metal<br>5 plastic<br>12 glass<br>3 tools<br>5 chemicals
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-07-29-175.png" style="height:120px;"></td>
+       <td>7.62mm Bullets</td>
+       <td>25 metal <br>5 plastic<br>10 glass<br>1 tool<br>5 chemicals<br>
        </td>
    </tr>
 </table>
 <br>
   </div>
-      <div id="partenaires_titre" class="titre"> <a href="#partenaires_titre" style="text-decoration:none; color:white; " onClick="bShowHide_partenaires('partenaires_content');">
-        <p>CRAFTING</p>
+        <div id="medical_titre" class="titre"> <a href="#medical_titre" style="text-decoration:none; color:white;display:block;width:100%;height:100%; " onClick="bShowHide_medical('medical_content');">
+        <p>MEDICAL</p>
         </a> </div>
-      <div id="partenaires_content" class="content">
-    <h1>CRAFTING</h1>
+        <div id="ligne1" class="ligne"> </div>
+      <div id="medical_content" class="content">
     <table class="center" cellpadding="10"><br>
    				<tr>
        				<td>ICON</td>
        				<td>NAME</td>
        				<td>MATERIALS</td>
    				</tr>
-   				<tr>
-       			<td><img src="images/icons/Aftermath 2015-04-02 13-06-14-080.png" style="height:120px;"></td>
-       			<td>Makeshift Shelter</td>
-                <td>5 tools <br/>
-                5 parts<br/>
-                25 metal<br/>
-                15 wood<br/>
-                5 adhesive<br/>
-                10 plastic
-                </td>
- 		  </tr>
-  		  <tr>
-          <td><img src="images/icons/Aftermath 2015-04-02 13-06-17-203.png" style="height:120px;"></td>
-       <td>Stash Box</td>
-       <td>
-       20 wood<br/>
-       10 adhesive<br/>
-       10 cloth<br/>3 tool<br/>2 part
+   	<tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-07-32-595.png"></td>
+       <td>Cold Sirup</td>
+       <td>2 chemicals<br>2 glass<br>1 cloth<br>
        </td>
    </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-07-35-757.png"></td>
+       <td>homebrew Bandage</td>
+       <td>2 cloth<br>1 chemical
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-07-39-651.png"></td>
+       <td>Homebrew penicilin</td>
+       <td>2 chemicals<br>2 adhesive<br>2 plastic<br>4 glass
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-07-48-504.png" style="height:120px;"></td>
+       <td>Activated Charcoal</td>
+       <td>3 chemicals<br>1 adhesive<br>1 plastic
+       </td>
+   </tr>
+   
+   <tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-07-51-527.png" style="height:120px;"></td>
+       <td>Homebrew Disinfectant</td>
+       <td>3 chemicals<br>3 plastic<br>5 glass
+       </td>
+   </tr>
+   
+</table>
+<br>
+  </div>
+        <div id="food_titre" class="titre"> <a href="#food_titre" style="text-decoration:none; color:white;display:block;width:100%;height:100%; " onClick="bShowHide_food('food_content');">
+        <p>FOOD</p>
+        </a> </div>
+      <div id="food_content" class="content">
+    <table class="center" cellpadding="10"><br>
+   				<tr>
+       				<td>ICON</td>
+       				<td>NAME</td>
+       				<td>MATERIALS</td>
+   				</tr>
+   	<tr>
+       <td><img src="images/icons/Aftermath 2015-04-02 13-07-57-008.png" style="height:120px;"></td>
+       <td>Poison Pill</td>
+       <td>1 chemical
+       </td>
+   </tr>
+   
+ 
 </table>
 <br>
   </div>
