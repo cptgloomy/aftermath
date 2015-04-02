@@ -1,7 +1,7 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.cptgloomy.aftermath" version="0.0.1">
-  <name>Aftermath</name>
-  <description>Aftermath Application</description>
-  <author href="http://phonegap.com" email="support@phonegap.com">cpt gloomy</author>
+  <name>Aftermath Crafting</name>
+  <description>Aftermath Crafting Application</description>
+  <author href="http://helloworldedhec.com" email="cptgloomy@gmail.com">cpt gloomy</author>
   <content src="index.html"/>
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="default"/>
