@@ -1,0 +1,146 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body{
+margin:0px;
+background-image:url(../fond.png);
+background-size:cover;
+background-repeat:no-repeat;
+height:100%;
+}
+
+@font-face {
+	font-family: Belloca-Italic ;
+	src: url(Bellota-Italic.otf) ;
+}
+
+#home {
+position:absolute;
+margin:0px;
+height:8em;
+background-image:url(../logo.png);
+width:100%;
+border-bottom:solid black 1px;
+background-size:cover;
+box-shadow: 0.1em 0.1em 0.1em black;
+z-index:1;
+top:0px;
+text-align:center;
+}
+
+
+#event_positioner{
+text-align:center;
+}
+
+
+#event1{display:inline;margin-left:-4em;}
+#event2{display:inline;margin-left:2em;}
+#event3{display:inline;margin-left:2em;}
+#logiciels_web2{margin-top:3em;}
+#realisations{margin-top:4em;}
+#perno{display:inline;margin-left:-4em;margin-top:4em;}
+#salon{display:inline;margin-left:2em;}
+#admissibles2013{display:inline;margin-left:2em;}
+#web1_1{display:inline;margin-left:-4em;}
+#web1_2{display:inline;margin-left:2em;}
+#web1_3{display:inline;margin-left:2em;}
+#web2_1{display:inline;margin-left:-4em;margin-top:4em;}
+#web2_2{display:inline;margin-left:2em;}
+#web2_3{display:inline;margin-left:2em;}
+#trust1{display:inline;margin-left:-4em;}
+#trust2{display:inline;margin-left:2em;}
+#trust3{display:inline;margin-left:2em;}
+#trustligne2{margin-top:5em;}
+#trust4{display:inline;margin-left:-4em;margin-top:4em;}
+#trust5{display:inline;margin-left:2em;}
+#trust6{display:inline;margin-left:2em;}
+#trustligne3{margin-top:5em;}
+#trust7{display:inline;margin-left:-8em;}
+#trust8{display:inline;margin-left:6em;}
+
+
+
+.centrage{
+text-align:center;
+}
+
+.ligne{
+height:1px;
+background-color:silver;
+width:90%;
+margin:auto auto;
+}
+
+.lignemenu{
+height:1px;
+background-color:silver;
+width:90%;
+margin:auto auto;
+}
+
+
+.content{
+text-align:justify;
+color:white;
+text-shadow: 0.2em 0.2em 0.1em black;
+background-color:black;
+padding:1em;
+text-align:center;
+box-shadow: -2px 4px 20px 6px black inset;
+display:none;
+}
+
+
+.content h1 {
+font-size:2em;
+}
+.content p{
+font-size:2em;
+color:lightsteelblue;
+width:100%;
+}
+
+.titre{
+text-align:center;
+font-size:1em;
+}
+
+#page{
+position:absolute;
+top:8em;
+width:100%;
+}
+
+#formulairemaintenance{
+display:none;
+background-color:rgba(80,80,80,0.5);
+border-radius:10px;
+box-shadow:4px 4px 2px black;
+}
+
+
+#modal{
+font-size:1em;
+line-height:0.8;
+display:none;
+}

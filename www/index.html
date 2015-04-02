@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+      "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<title>Aftermath</title>
+	<script>function bShowHide_presentation(elemID)
+	{
+		document.getElementById("maintenance_content").style.display="none"
+		document.getElementById("salon_content").style.display="none"
+		document.getElementById("contact_content").style.display="none"
+		document.getElementById("evenements_content").style.display="none"
+		
+		document.getElementById("partenaires_content").style.display="none"
+		var e = document.getElementById(elemID);
+		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
+		e.style.display = dStyle;
+	}
+	</script>
+	<script>function bShowHide_maintenance(elemID)
+	{
+		document.getElementById("presentation_content").style.display="none"
+		document.getElementById("salon_content").style.display="none"
+		document.getElementById("contact_content").style.display="none"
+		document.getElementById("evenements_content").style.display="none"
+		
+		document.getElementById("partenaires_content").style.display="none"
+		var e = document.getElementById(elemID);
+		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
+		e.style.display = dStyle;
+	}
+	</script>
+	<script>function bShowHide_salon(elemID)
+	{
+		document.getElementById("maintenance_content").style.display="none"
+		document.getElementById("presentation_content").style.display="none"
+		document.getElementById("contact_content").style.display="none"
+		document.getElementById("evenements_content").style.display="none"
+		
+		document.getElementById("partenaires_content").style.display="none"
+		var e = document.getElementById(elemID);
+		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
+		e.style.display = dStyle;
+	}
+	</script>
+	<script>function bShowHide_contact(elemID)
+	{
+		document.getElementById("maintenance_content").style.display="none"
+		document.getElementById("salon_content").style.display="none"
+		document.getElementById("presentation_content").style.display="none"
+		document.getElementById("evenements_content").style.display="none"
+	
+		document.getElementById("partenaires_content").style.display="none"
+		var e = document.getElementById(elemID);
+		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
+		e.style.display = dStyle;
+	}
+	</script>
+	<script>function bShowHide_evenements(elemID)
+	{
+		document.getElementById("maintenance_content").style.display="none"
+		document.getElementById("salon_content").style.display="none"
+		document.getElementById("contact_content").style.display="none"
+		document.getElementById("presentation_content").style.display="none"
+	
+		document.getElementById("partenaires_content").style.display="none"
+		var e = document.getElementById(elemID);
+		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
+		e.style.display = dStyle;
+	}
+	</script>
+	<script>function bShowHide_partenaires(elemID)
+	{
+		document.getElementById("maintenance_content").style.display="none"
+		document.getElementById("salon_content").style.display="none"
+		document.getElementById("contact_content").style.display="none"
+		document.getElementById("evenements_content").style.display="none"
+
+		document.getElementById("presentation_content").style.display="none"
+		var e = document.getElementById(elemID);
+		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
+		e.style.display = dStyle;
+	}
+	</script>
+	<script>function bShowHide(elemID)
+	{
+		var e = document.getElementById(elemID);
+		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
+		e.style.display = dStyle;
+	}
+	</script>
+	</head>
+	<body>
+<div id="home"> <a href="#modal" class="second" style="float:left;">
+      <div id="centrage" style="max-width:100%;"></div>
+    </div>
+<div id="page">
+<div id="presentation_titre" class="titre"> <a href="#presentation_titre" style="text-decoration:none; color:white; " onClick="bShowHide_presentation('presentation_content');">
+  <p>WEAPONS</p>
+  </a> </div>
+<div id="ligne1" class="ligne"> </div>
+<div  id="presentation_content" class="content">
+      <h1>WEAPONS</h1>
+      <p> <br/>
+  <p>text</p>
+    </div>
+<div id="maintenance_titre" class="titre"> <a href="#maintenance_titre"  style="text-decoration:none; color:white; " onClick="bShowHide_maintenance('maintenance_content');">
+  <p>CARS</p>
+  </a> </div>
+<div id="ligne1" class="ligne"> </div>
+<div id="maintenance_content" class="content">
+      <h1> CARS</h1>
+      <p>text</p>
+    </div>
+<div id="salon_titre" class="titre"> <a href="#salon_titre" style="text-decoration:none; color:white; " onClick="bShowHide_salon('salon_content');">
+  <p>PVP</p>
+  </a> </div>
+<div id="ligne1" class="ligne"> </div>
+<div id="salon_content" class="content">
+  <h1>PVP</h1>
+      <p>text</p>
+    </div>
+<div id="contact_titre" class="titre"> <a href="#contact_titre" style="text-decoration:none; color:white; " onClick="bShowHide_contact('contact_content');">
+  <p>MAP</p>
+  </a> </div>
+<div id="ligne1" class="ligne"> </div>
+<div id="contact_content" class="content">
+<h1>MAP</h1>
+      <p>text</p>
+    </div>
+
+<div id="evenements_titre" class="titre"> <a href="#evenements_titre" style="text-decoration:none; color:white; " onClick="bShowHide_evenements('evenements_content');">
+  <p>ZOMBIES</p>
+  </a> </div>
+<div id="ligne1" class="ligne"> </div>
+<div id="evenements_content" class="content">
+      <h1>ZOMBIES</h1>
+      <p>text</p>
+    </div>
+<div id="partenaires_titre" class="titre"> <a href="#partenaires_titre" style="text-decoration:none; color:white; " onClick="bShowHide_partenaires('partenaires_content');">
+  <p>CRAFTING</p>
+  </a> </div>
+<div id="ligne1" class="ligne"> </div>
+<div id="partenaires_content" class="content">
+      <h1>CRAFTING</h1>
+      <p>text</p>
+    </div>
+</body>
+</html>
