@@ -51,21 +51,41 @@ body {
 	top: 20%;
 	width: 100%;
 	height:70%;
+	margin:0px;
+	padding:0px;
+	text-align: center;
 }
 .titre {
-	position:relative;
 	text-align: center;
 	font-size: 2em;
 	height:13%;
-	padding:0;
+	margin:0px;
+	padding:0px;
+}
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+table
+{
+    border-collapse: collapse;
+	
+}
+td
+{
+    border: 1px solid rgb(102,102,102);
 }
 .ligne {
+	position:relative;
 	height: 0.2%;
 	background-color: silver;
 	width: 95%;
-	margin: auto auto;
+	margin:auto;
 }
 .content {
+	top:0px;
+		margin:0px;
+	padding:0px;
 	text-align: justify;
 	color: white;
 	text-shadow: 0.2em 0.2em 0.1em black;
@@ -73,6 +93,7 @@ body {
 	text-align: center;
 	box-shadow: -2px 4px 20px 6px black inset;
 	display: none;
+	
 }
 .content h1 {
 	font-size: 2em;
