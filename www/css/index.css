@@ -69,11 +69,14 @@ table.center {
 table
 {
     border-collapse: collapse;
+	font-size:2em;
+	
 	
 }
 td
 {
     border: 1px solid rgb(102,102,102);
+	
 }
 .ligne {
 	position:relative;
@@ -93,6 +96,7 @@ td
 	text-align: center;
 	box-shadow: -2px 4px 20px 6px black inset;
 	display: none;
+
 	
 }
 .content h1 {
