@@ -28,12 +28,13 @@ body {
 	background-image: url(../fond.png);
 	background-size: cover;
 	max-height:100%;
+	font-family: 'Oswald', sans-serif;
 }
 @font-face {
-	font-family: Belloca-Italic;
-	src: url(Bellota-Italic.otf);
+ font-family: 'Oswald', sans-serif;;
 }
 #home {
+	font-family: 'Oswald', sans-serif;
 	position: absolute;
 	margin: 0px;
 	height: 17%;
