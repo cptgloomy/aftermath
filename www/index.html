@@ -29,6 +29,8 @@
 	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
 	<title>Aftermath</title>
+	<script type="text/javascript" src="cordova.js"></script>
+
 	<script>function bShowHide_presentation(elemID)
 	{
 		document.getElementById("maintenance_content").style.display="none"
@@ -151,7 +153,26 @@
 		e.style.display = dStyle;
 	}
 	</script>
-    
+    <script>
+	// select the right Ad Id according to platform
+    var admobid = {};
+    if( /(android)/i.test(navigator.userAgent) ) { // for android
+        admobid = {
+            banner: 'ca-app-pub-5715551183312330/9935357603 ', // or DFP format "/6253334/dfp_example_ad"
+            interstitial: 'ca-app-pub-xxx/yyy'
+        };
+    } else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) { // for ios
+        admobid = {
+            banner: 'ca-app-pub-xxx/zzz', // or DFP format "/6253334/dfp_example_ad"
+            interstitial: 'ca-app-pub-xxx/kkk'
+        };
+    } else { // for windows phone
+        admobid = {
+            banner: 'ca-app-pub-xxx/zzz', // or DFP format "/6253334/dfp_example_ad"
+            interstitial: 'ca-app-pub-xxx/kkk'
+        };
+    }
+</script>
 	</head>
 	<body>
 <div id="home"> </div>
@@ -616,6 +637,13 @@
 </table>
 <br>
   </div>
+  <script>
+  if(AdMob) AdMob.createBanner( {
+    adId: admobid.banner, 
+    position: AdMob.AD_POSITION.TOP_CENTER, 
+    autoShow: true } );
+	</script>
     </div>
+     
 </body>
 </html>
