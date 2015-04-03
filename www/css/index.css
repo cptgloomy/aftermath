@@ -25,7 +25,7 @@ html {
 body {
 
 	margin: 0px;
-	background-image: url(../fond.png);
+	background-image: url(../images/fond.png);
 	background-size: cover;
 	max-height:100%;
 	font-family: 'Oswald', sans-serif;
@@ -38,10 +38,13 @@ body {
 	position: absolute;
 	margin: 0px;
 	height: 17%;
-	background-image: url(../logo.png);
+	background-image:url(../images/main_logo.png), url(../images/head.png);
+	background-color:black;
 	width: 100%;
 	border-bottom: solid black 1px;
-	background-size: cover;
+	background-size: 35%, cover;
+	background-position:center;
+	background-repeat:no-repeat;
 	box-shadow: 0.1em 0.1em 0.1em black;
 	z-index: 1;
 	top: 0px;
