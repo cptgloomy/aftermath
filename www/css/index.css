@@ -25,7 +25,7 @@ html {
 body {
 
 	margin: 0px;
-	background-image: url(../images/fond.png);
+	background-color:#144E73;
 	background-size: cover;
 	max-height:100%;
 	font-family: 'Oswald', sans-serif;
@@ -38,8 +38,7 @@ body {
 	position: absolute;
 	margin: 0px;
 	height: 17%;
-	background-image:url(../images/main_logo.png), url(../images/head.png);
-	background-color:black;
+	background-color:#C9E7F2;
 	width: 100%;
 	border-bottom: solid black 1px;
 	background-size: 35%, cover;
@@ -48,7 +47,13 @@ body {
 	box-shadow: 0.1em 0.1em 0.1em black;
 	z-index: 1;
 	top: 0px;
+	color:black;
+	text-align:center;
+	font-size:3.5em;
+	
 }
+
+#tiiiitre{z-index:2;padding:2%;}
 #page {
 	position:absolute;
 	top: 17%;
@@ -95,7 +100,7 @@ td
 	text-align: justify;
 	color: white;
 	text-shadow: 0.2em 0.2em 0.1em black;
-	background-color: black;
+	background-color:#023059;
 	text-align: center;
 	box-shadow: -2px 4px 20px 6px black inset;
 	display: none;
