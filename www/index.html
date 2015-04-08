@@ -40,6 +40,7 @@
 		document.getElementById("medical_content").style.display="none"
 		document.getElementById("food_content").style.display="none"		
 		document.getElementById("partenaires_content").style.display="none"
+		document.getElementById("car_content").style.display="none"
 		var e = document.getElementById(elemID);
 		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
 		e.style.display = dStyle;
@@ -54,6 +55,7 @@
 		document.getElementById("medical_content").style.display="none"
 		document.getElementById("food_content").style.display="none"		
 		document.getElementById("partenaires_content").style.display="none"
+		document.getElementById("car_content").style.display="none"
 		var e = document.getElementById(elemID);
 		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
 		e.style.display = dStyle;
@@ -68,6 +70,7 @@
 		document.getElementById("medical_content").style.display="none"
 		document.getElementById("food_content").style.display="none"		
 		document.getElementById("partenaires_content").style.display="none"
+		document.getElementById("car_content").style.display="none"
 		var e = document.getElementById(elemID);
 		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
 		e.style.display = dStyle;
@@ -82,6 +85,7 @@
 		document.getElementById("medical_content").style.display="none"
 		document.getElementById("food_content").style.display="none"	
 		document.getElementById("partenaires_content").style.display="none"
+		document.getElementById("car_content").style.display="none"
 		var e = document.getElementById(elemID);
 		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
 		e.style.display = dStyle;
@@ -96,6 +100,7 @@
 		document.getElementById("medical_content").style.display="none"
 		document.getElementById("food_content").style.display="none"	
 		document.getElementById("partenaires_content").style.display="none"
+		document.getElementById("car_content").style.display="none"
 		var e = document.getElementById(elemID);
 		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
 		e.style.display = dStyle;
@@ -110,6 +115,7 @@
 		document.getElementById("medical_content").style.display="none"
 		document.getElementById("food_content").style.display="none"
 		document.getElementById("presentation_content").style.display="none"
+		document.getElementById("car_content").style.display="none"
 		var e = document.getElementById(elemID);
 		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
 		e.style.display = dStyle;
@@ -125,6 +131,7 @@
 		document.getElementById("food_content").style.display="none"
 		document.getElementById("presentation_content").style.display="none"
         document.getElementById("partenaires_content").style.display="none"
+		document.getElementById("car_content").style.display="none"
 		var e = document.getElementById(elemID);
 		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
 		e.style.display = dStyle;
@@ -140,6 +147,23 @@
 		document.getElementById("medical_content").style.display="none"
 		document.getElementById("presentation_content").style.display="none"
 		document.getElementById("partenaires_content").style.display="none"
+		document.getElementById("car_content").style.display="none"
+		var e = document.getElementById(elemID);
+		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
+		e.style.display = dStyle;
+	}
+	</script>
+    
+    <script>function bShowHide_car(elemID)
+	{
+		document.getElementById("maintenance_content").style.display="none"
+		document.getElementById("salon_content").style.display="none"
+		document.getElementById("contact_content").style.display="none"
+		document.getElementById("evenements_content").style.display="none"
+		document.getElementById("medical_content").style.display="none"
+		document.getElementById("presentation_content").style.display="none"
+		document.getElementById("partenaires_content").style.display="none"
+		document.getElementById("food_content").style.display="none"
 		var e = document.getElementById(elemID);
 		var dStyle = ((e.style.display == '' || e.style.display == 'none') ? 'block':'none');
 		e.style.display = dStyle;
@@ -626,6 +650,7 @@
         <div id="food_titre" class="titre"> <a href="#line7" style="text-decoration:none; color:white;display:block;width:100%;height:100%; " onClick="bShowHide_food('food_content');">
         <p>FOOD</p>
         </a> </div>
+        <div id="line8" class="ligne"> </div>
       <div id="food_content" class="content">
     <table class="center" cellpadding="10"><br>
    				<tr>
@@ -639,6 +664,49 @@
        <td>1 chemical
        </td>
    </tr>
+   
+ 
+</table>
+<br>
+</div>
+ <div id="car_titre" class="titre"> <a href="#line8" style="text-decoration:none; color:white;display:block;width:100%;height:100%; " onClick="bShowHide_car('car_content');">
+        <p>CAR</p>
+        </a> </div>
+      <div id="car_content" class="content">
+    <table class="center" cellpadding="10"><br>
+   				<tr>
+       				<td>CAR</td>
+       				<td>MAP</td>
+   				</tr>
+   	<tr>
+       <td><img src="images/car/1a.png"></td>
+       <td><img src="images/car/1b.png"></td>
+   </tr>
+   	<tr>
+       <td><img src="images/car/2a.png"></td>
+       <td><img src="images/car/2b.png"></td>
+   </tr>
+   	<tr>
+       <td><img src="images/car/3a.png"></td>
+       <td><img src="images/car/3b.png"></td>
+   </tr>
+   	<tr>
+       <td><img src="images/car/4a.png"></td>
+       <td><img src="images/car/4b.png"></td>
+   </tr>
+   	<tr>
+       <td><img src="images/car/5a.png"></td>
+       <td><img src="images/car/5b.png"></td>
+   </tr>
+   	<tr>
+       <td><img src="images/car/6a.png"></td>
+       <td><img src="images/car/6b.png"></td>
+   </tr>
+   	<tr>
+       <td><img src="images/car/7a.png"></td>
+       <td><img src="images/car/7b.png"></td>
+   </tr>
+   
    
  
 </table>
