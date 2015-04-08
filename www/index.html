@@ -177,36 +177,6 @@
 		e.style.display = dStyle;
 	}
 	</script>
-    <script>
-	// select the right Ad Id according to platform
-    var admobid = {};
-    if( /(android)/i.test(navigator.userAgent) ) { // for android
-        admobid = {
-            banner: 'ca-app-pub-5715551183312330/9935357603', // or DFP format "/6253334/dfp_example_ad"
-            interstitial: 'ca-app-pub-xxx/yyy'
-        };
-    } else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) { // for ios
-        admobid = {
-            banner: 'ca-app-pub-xxx/zzz', // or DFP format "/6253334/dfp_example_ad"
-            interstitial: 'ca-app-pub-xxx/kkk'
-        };
-    } else { // for windows phone
-        admobid = {
-            banner: 'ca-app-pub-xxx/zzz', // or DFP format "/6253334/dfp_example_ad"
-            interstitial: 'ca-app-pub-xxx/kkk'
-        };
-    }
-	function initApp() {
-    if (AdMob) {
-        AdMob.createBanner({
-            adId : admobid.banner,
-            position : AdMob.AD_POSITION.BOTTOM_CENTER,
-            autoShow : true
-        });
-    }
-}
-	document.addEventListener('deviceready', initApp, false);
-</script>
 	</head>
 	<body>
 <div id="home"> </div>
@@ -722,13 +692,8 @@
 </table>
 <br>
   </div>
-  <script>
-  if(AdMob) AdMob.createBanner( {
-    adId: admobid.banner, 
-    position: AdMob.AD_POSITION.TOP_CENTER, 
-    autoShow: true } );
-	</script>
+
     </div>
-     
+    
 </body>
 </html>
