@@ -24,12 +24,7 @@
   <gap:plugin name="com.google.cordova.admob" source="plugins.cordova.io" />
   
 
-  <gap:plugin name="org.apache.cordova.dialogs"/>
-  <gap:plugin name="org.apache.cordova.file"/>
-  <gap:plugin name="org.apache.cordova.file-transfer"/>
   
-  <gap:plugin name="org.apache.cordova.network-information"/>
-  <gap:plugin name="org.apache.cordova.splashscreen"/>
   
   <icon src="icon.png"/>
   <icon src="www/res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
@@ -41,6 +36,25 @@
   <gap:splash src="www/res/screen/android/screen-mdpi-portrait.png" gap:platform="android" gap:qualifier="port-mdpi"/>
   <gap:splash src="www/res/screen/android/screen-hdpi-portrait.png" gap:platform="android" gap:qualifier="port-hdpi"/>
   <gap:splash src="www/res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xhdpi"/>
+  
+ <gap:plugin name="org.apache.cordova.battery-status" source="npm" />
+<gap:plugin name="org.apache.cordova.camera" source="npm" />
+<gap:plugin name="org.apache.cordova.media-capture" source="npm" />
+<gap:plugin name="org.apache.cordova.console" source="npm" />
+<gap:plugin name="org.apache.cordova.contacts" source="npm"/>
+<gap:plugin name="org.apache.cordova.device" source="npm"/>
+<gap:plugin name="org.apache.cordova.device-motion" source="npm"/>
+<gap:plugin name="org.apache.cordova.device-orientation" source="npm"/>
+<gap:plugin name="org.apache.cordova.dialogs" source="npm"/>
+<gap:plugin name="org.apache.cordova.file" source="npm" />
+<gap:plugin name="org.apache.cordova.file-transfer" source="npm"/>
+<gap:plugin name="org.apache.cordova.geolocation" source="npm"/>
+<gap:plugin name="org.apache.cordova.globalization" source="npm"/>
+<gap:plugin name="org.apache.cordova.inappbrowser" source="npm"/>
+<gap:plugin name="org.apache.cordova.media" source="npm" />
+<gap:plugin name="org.apache.cordova.network-information" source="npm" />
+<gap:plugin name="org.apache.cordova.splashscreen" source="npm"/>
+<gap:plugin name="org.apache.cordova.vibration" source="npm" />
   
   <access origin="*"/>
 </widget>
